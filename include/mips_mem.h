@@ -2,7 +2,7 @@
     Defines the functions used to interact with simulated memory.
     
     Note that the notions of "memory/address space" and "RAM" are actually
-    two related but distinct things (we will explore this more later).
+    two related but distinct things.
     A memory space is some kind of addressable space that the CPU can
     read and write to, where addressable locations are identified by
     integers. For the moment we will only deal with one address space,
@@ -69,7 +69,7 @@ struct mips_mem_provider;
     tell whether or not a handle is currently pointing at a
     data-structure.
 */
-typedef struct mips_mem_provider *mips_mem_h;
+typedef struct mips_mem_provider *mips_mem_h; // the "h" suffix stands for "handle".
 
 
 /*! Perform a read transaction on the memory

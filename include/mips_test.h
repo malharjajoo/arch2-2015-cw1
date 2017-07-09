@@ -105,7 +105,7 @@ extern "C"{
 */
 
 /*! Call once at the beginning of all tests to setup
-    testing information.
+    testing information.Eg - setting up PC etc.
 */
 void mips_test_begin_suite();
   
@@ -125,11 +125,11 @@ int mips_test_begin_test(const char *instruction);
 
 /*! Used to indicate whether an individual test passed or failed.
 
-    \param testId The unique identifier returned from mips_test_begin_test.
+    \param testId -The unique identifier returned from mips_test_begin_test.
     
-    \param passed Flag to indicate if the test succeeded (passed!=0) or failed (passed==0).
+    \param passed -A Flag to indicate if the test succeeded (passed!=0) or failed (passed==0).
     
-    \param msg An optional message to explain what you the test was looking for in
+    \param msg An optional message to explain what the test was looking for in
         case it failed. Can be NULL if there is nothing useful to print, or you don't want to
         write a message.
 */

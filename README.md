@@ -44,9 +44,9 @@ the original directory structure and files, as well as the
 files that you have contributed. The two key things you will
 be adding are:
 
- - `src/[your_login]/mips_cpu.c` or `mips_cpu.cpp`
+ - `src/[your_login]/mips_cpu.c` or `src/[your_login]/mips_cpu.cpp`
  
- - `src/[your_login]/test_mips.c` or `test_mips.cpp`
+ - `src/[your_login]/test_mips.c` or `src/[your_login]/test_mips.cpp`
  
 The first part is the implementation of a mips simulator, and
 is essentially a library that implements the api found in
